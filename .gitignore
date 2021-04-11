@@ -122,6 +122,7 @@ target/
 .idea/
 .eclipse
 .settings/
+.idea/
 # Compiled class file
 *.class
 
