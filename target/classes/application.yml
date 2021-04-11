@@ -1,0 +1,22 @@
+server:
+  port: 8083
+
+spring:
+  jpa:
+    database: Mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    username: root
+    password: r00t
+    url: jdbc:mysql://localhost:3306/authdb
+    driverClassName: com.mysql.jdbc.Driver
+
+keycloak:
+  server:
+    contextPath: /auth
+    adminUser:
+      username: jsc-admin
+      password: pass
+    realmImportFile: juliocastro-realm.json
