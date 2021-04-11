@@ -1,8 +1,0 @@
-/Users/juliocastro/dev/projects/pessoal/java/oauth-authorization-server/src/main/java/com/juliocastro/auth/config/KeycloakServerProperties.java
-/Users/juliocastro/dev/projects/pessoal/java/oauth-authorization-server/src/main/java/com/juliocastro/auth/config/EmbeddedKeycloakRequestFilter.java
-/Users/juliocastro/dev/projects/pessoal/java/oauth-authorization-server/src/main/java/com/juliocastro/auth/config/RegularJsonConfigProviderFactory.java
-/Users/juliocastro/dev/projects/pessoal/java/oauth-authorization-server/src/main/java/com/juliocastro/auth/config/EmbeddedKeycloakApplication.java
-/Users/juliocastro/dev/projects/pessoal/java/oauth-authorization-server/src/main/java/com/juliocastro/auth/config/SimplePlatformProvider.java
-/Users/juliocastro/dev/projects/pessoal/java/oauth-authorization-server/src/main/java/com/juliocastro/auth/AuthorizationServerApp.java
-/Users/juliocastro/dev/projects/pessoal/java/oauth-authorization-server/src/main/java/com/juliocastro/auth/config/Resteasy3Provider.java
-/Users/juliocastro/dev/projects/pessoal/java/oauth-authorization-server/src/main/java/com/juliocastro/auth/config/EmbeddedKeycloakConfig.java
