@@ -1,0 +1,42 @@
+version: '3.3'
+
+services:
+    #service 1: definition of mysql database
+    db:
+      image: mysql:latest
+      container_name: mysql-db2
+      volumes:
+        - /home/julio/dev/volume/mysql:/var/lib/mysql
+      environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: authdb
+        MYSQL_USER: authuser
+        MYSQL_PASSWORD: changeit
+      ports:
+        - "3306:3306"
+      restart: always
+      
+    
+    #service 2: definition of phpMyAdmin
+    phpmyadmin:
+      image: phpmyadmin/phpmyadmin:latest
+      container_name: my-php-myadmin
+      ports:
+        - "8082:80"
+      restart: always   
+      depends_on:
+        - db
+
+
+    authservice    :                        #it is just a name, which will be used only in this file.
+      image: auth-service                   #name of the image after dockerfile executes
+      container_name: auth-service-app  #name of the container created from docker image
+      build:
+        context: .                          #docker file path (. means root directory)
+        dockerfile: Dockerfile              #docker file name
+      ports:
+        - "8083:8083"                       #docker containter port with your os port
+      restart: always
+        
+      depends_on:                           #define dependencies of this app
+        - db                                #dependency name (which is defined with this name 'db' in this file earlier)

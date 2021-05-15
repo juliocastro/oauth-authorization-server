@@ -96,11 +96,11 @@
 	},
 	"connectionsJpa": {
 		"default": {
-			"url": "${keycloak.connectionsJpa.url:jdbc:mysql://localhost:3306/authdb}",
+			"url": "${keycloak.connectionsJpa.url:jdbc:mysql://mysql-db2:3306/authdb}",
 			"driver": "${keycloak.connectionsJpa.driver:com.mysql.jdbc.Driver}",
 			"driverDialect": "${keycloak.connectionsJpa.driverDialect:org.hibernate.dialect.MySQL8Dialect}",
-			"user": "${keycloak.connectionsJpa.user:root}",
-			"password": "${keycloak.connectionsJpa.password:r00t}",
+			"user": "${keycloak.connectionsJpa.user:authuser}",
+			"password": "${keycloak.connectionsJpa.password:changeit}",
 			"initializeEmpty": true,
 			"migrationStrategy": "update",
 			"showSql": "${keycloak.connectionsJpa.showSql:false}",
